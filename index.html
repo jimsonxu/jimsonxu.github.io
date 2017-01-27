@@ -215,6 +215,7 @@
                             <p>This networked bomberman clone aims to support up to 30 simultaneous players at once. To accomodate so many players, the playing field is much much larger than what is visible on screen. To save on memory and performance, only what is visible on the player's screen is rendered.</p>
                             <p>As you can see in this screenshot below, the <i>Scene</i> view clearly shows that only a portion of the gameboard is drawn. But to the player, it appears as if the board is continuous. This gives player's a good play experience while saving computing costs.</p>
                             <img src="img/portfolio/bomberman/player-view.jpg" class="img-responsive img-centered" alt="Player view of the world">
+                            <p>Walls and boxes are also reused via a gameobject pool. So when a new area of the gameboard enters into view, we do not have to create a whole new gameobject. We simply reuse the existing gameobjects already created. We only create new walls and boxes if the pool has been exhausted. So adding and removing gameobjects from the gameboard becomes a cost effective process.</p>
                             <p>Items in the game include bomb-up (bomb), speed-up (blue arrow), and blast-range-up (lightning bolt).</p>
                             <div class="row">
                                <div class="col-sm-6">
@@ -224,6 +225,8 @@
                                     <img src="img/portfolio/bomberman/other-items.jpg" class="img-responsive" alt="Other Items">
                                 </div>
                             </div>
+                            <p>Gather items to become a force to be reckoned with!</p>
+                            <img src="img/portfolio/bomberman/god.jpg" class="img-responsive img-centered" alt="A force to be reckoned with">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
